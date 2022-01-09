@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Fault Detector</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/10.0.1/math.min.js" integrity="sha512-kQRlK1SJWaTGiiJQ44Moe3YINY3xbKFNouO+TUBUW8b5K5cMEocfbVT+aTArq6ye6dlXBrx7p/NmU7Sab8NtMA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+</head>
+<body>
+    <div id="box">
+        <div class="dropdown">
+        <button class="dropbtn">i</button>
+        <div class="dropdown-content">
+        <p> Group Members:</p>    
+        <a href="#">M. Faizan Shaikh</a>
+         <a href="#">Rehan Ali</a>
+          <a href="#">Mujtaba Abid Hussain</a>
+            <a href="#">Abdul Saboor Gul</a>
+        </div>
+        </div>
+        <h1>
+            FAULT DETECTOR
+             </h1>
+            <div id="text">
+                This fault detector calculates different types of faults in your system including balanced and unbalanced faults(SLG, LL, DLG). Just enter your phasor values of currents and voltages in your system and find out the fault present in your system. Input the phasors in the form: "magntitude &lt;  phaseangle"  
+             </div>
+    
+             <h3>Phasor currents & Voltages:
+             </h3>
+             <div id="inputs">
+                
+               <label for="Ia">Enter Current and Voltage for phase "a" </label>
+                 <br>
+                <label for="Ia">Current (Amperes) </label><input type="text" value="" id="Ia"><label for="Va">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  Voltage (Volts) </label> <input type="text" value="" id="Va">
+                 <br> <br>
+                 <label for="Ib">Enter Current and Voltage for phase "b" </label> <br>
+                 <label for="Ib">Current (Amperes) </label><input type="text" value="" id="Ib"><label for="Vb">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Voltage (Volts) </label> <input type="text" value="" id="Vb">
+                 <br> <br>
+                 <label for="Ic">Enter Current and Voltage for phase "c" </label> <br>
+                 <label for="Ic">Current (Amperes) </label><input type="text" value="" id="Ic"><label for="Vc">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Voltage (Volts) </label> <input type="text" value="" id="Vc">
+            <br>
+                 <BR>
+                     <BR>
+                 
+                <button type="button" onClick="faultAnalysis()">Find  Fault</button>
+                </div>
+             <div id="outputs">
+                 <br>
+                 
+                 
+                 
+             </div>
+             <br>
+            <b> Type of Fault Detected:</b> <br>
+             <span id="result"></span>
+        <br>
+        <br><br>
+         </div>
+         <script src="app.js"> </script>
+</body>
+</html>
