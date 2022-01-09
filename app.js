@@ -1,4 +1,4 @@
-<script>
+
     function getValue()
 {
     var Ia=document.getElementById('Ia').value;
@@ -127,4 +127,3 @@ function Result(current,angle){
     }
 
 }
-</script>
