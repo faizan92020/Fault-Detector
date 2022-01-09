@@ -1,4 +1,4 @@
-<style>
+
         body{
             font-family: 'Helvetica', sans-serif;
             background: linear-gradient(to bottom right,darkblue,pink);
@@ -91,5 +91,3 @@ button {
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropbtn {background-color: grey;}
-
-    </style>
